@@ -1,0 +1,8 @@
+discord.py
+motor
+PyYAML
+python-dotenv
+PyMongo
+ffmpeg-python
+
+yt-dlp

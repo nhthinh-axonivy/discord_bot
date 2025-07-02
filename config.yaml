@@ -1,0 +1,31 @@
+# config.yaml
+
+bot:
+  token: OTgyMTM3OTgxMzAzNDE0ODI0.Gxa5Vo.4E-_YmSgvkukDePKnHdI5GiFQh9-ui2GYwr09E  # Token bot (rất quan trọng)
+  prefix: "!"                      # Prefix lệnh
+  owner_id: 123456789012345678     # ID chủ sở hữu bot
+  debug: false                     # Chế độ debug
+
+lavalink:
+  host: "localhost"
+  port: 2207
+  password: "youshallnotpass"
+  enabled: true
+
+database:
+  uri: "mongodb://localhost:27017"
+  name: "prison_bot"
+
+channels:
+  welcome: 123456789012345678
+  logs: 987654321098765432
+  music: 111222333444555666
+
+roles:
+  default: 111222333444555666
+  staff: 666555444333222111
+  prisoner: 555444333222111000
+
+style:
+  color: 0xFF0000
+  verbose: true
