@@ -9,7 +9,7 @@ from async_timeout import timeout
 from discord.ext import commands
 
 # Tắt thông báo lỗi không cần thiết từ youtube_dl
-youtube_dl.utils.bug_reports_message = lambda: ''
+youtube_dl.utils.bug_reports_message = lambda *args, **kwargs: ''
 
 
 # --- Định nghĩa các Exception tùy chỉnh ---
