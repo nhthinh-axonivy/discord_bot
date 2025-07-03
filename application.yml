@@ -1,10 +1,10 @@
 
 server:
-  port: 2207
+  port: 2333
   address: localhost
 lavalink:
   server:
-    password: ""
+    password: "youshallnotpass"
     sources:
       youtube: true
       bandcamp: true

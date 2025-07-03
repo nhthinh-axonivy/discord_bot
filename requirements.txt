@@ -6,3 +6,7 @@ PyMongo
 ffmpeg-python
 
 yt-dlp
+async
+youtube_dl
+async-timeout
+PyNaCl

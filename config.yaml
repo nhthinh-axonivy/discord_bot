@@ -1,31 +1,21 @@
 # config.yaml
 
 bot:
-  token: OTgyMTM3OTgxMzAzNDE0ODI0.Gxa5Vo.4E-_YmSgvkukDePKnHdI5GiFQh9-ui2GYwr09E  # Token bot (rất quan trọng)
-  prefix: "!"                      # Prefix lệnh
-  owner_id: 123456789012345678     # ID chủ sở hữu bot
-  debug: false                     # Chế độ debug
-
-lavalink:
-  host: "localhost"
-  port: 2207
-  password: "youshallnotpass"
-  enabled: true
+  prefix: "!" # Tiền tố lệnh của bot (ví dụ: !play)
+  owner_id: YOUR_OWNER_ID_HERE # ID Discord của bạn (là số), dùng cho các lệnh chỉ chủ bot mới dùng được
+  token: "" # TOKEN BOT DISCORD CỦA BẠN (Lấy từ Discord Developer Portal)
 
 database:
-  uri: "mongodb://localhost:27017"
-  name: "prison_bot"
+  uri: "mongodb://localhost:27017/" # URI kết nối MongoDB (thay đổi nếu database của bạn ở nơi khác)
+  name: "your_bot_database_name" # Tên của database trong MongoDB
 
-channels:
-  welcome: 123456789012345678
-  logs: 987654321098765432
-  music: 111222333444555666
-
-roles:
-  default: 111222333444555666
-  staff: 666555444333222111
-  prisoner: 555444333222111000
-
-style:
-  color: 0xFF0000
-  verbose: true
+ffmpeg:
+  # Đường dẫn đến file thực thi (executable) của FFmpeg.
+  # RẤT QUAN TRỌNG: Đảm bảo đường dẫn này chính xác!
+  # Nếu FFmpeg đã được thêm vào biến môi trường PATH của hệ thống và bạn có thể chạy `ffmpeg`
+  # từ bất kỳ đâu trong terminal, thì "ffmpeg" là đủ.
+  path: "C:/Users/Administrator/Desktop/ffmpegg/bin/ffmpeg.exe" 
+  # Ví dụ trên Windows, nếu bạn giải nén FFmpeg vào C:\ffmpeg-6.1.1-full_build-shared:
+  # path: "C:/ffmpeg-6.1.1-full_build-shared/bin/ffmpeg.exe"
+  # Ví dụ trên Linux/macOS nếu cài đặt thủ công và không nằm trong PATH mặc định:
+  # path: "/usr/local/bin/ffmpeg"
